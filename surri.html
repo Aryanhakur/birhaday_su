@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy birthday Surri</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+     
+    <div class="container">
+
+        <div class="slide">
+
+            
+            <div class="item" style="background-image: url(IMG-20240211-WA0012.jpg);">
+                <div class="content" style="background: -webkit-linear-gradient(0deg,rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.25)); background-clip: text; -webkit-background-clip: text;-webkit-text-fill-color: transparent; backdrop-filter: blur(10px);">
+                    <div class="name"background: -webkit-linear-gradient(#fff, #f53eaf, #cd9d5d,#b5e06f); background-clip: text; -webkit-text-fill-color: transparent; font-weight: 700;>From creater </div>
+                    <div class="des" style="font-size: 18px ;background: -webkit-linear-gradient(#fff, #f53eaf, #cd9d5d,#b5e06f); background-clip: text; -webkit-text-fill-color: transparent; font-weight: 700;"> 
+                        <H1>Happiest Birthaday <br>
+                        Surri</H1>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="item" style="background-image: url(IMG-20240211-WA0013.jpg);">
+                <div class="content">
+                    <div class="name">From Divya</div>
+                    <div class="des" style="background: -webkit-linear-gradient(#0d67ee, #33ccf3, #333); background-clip: text; -webkit-text-fill-color: transparent; font-weight: 700;">Happiest birthday Divya, I'm really grateful to have you .
+                        My bestie,, partner in crime,,, longest struggling story with him 🤣,, jhelra mujko or me bhi jhel hi ri hun ,,,,but forever ♾️ chalega saath ,,, happy rahe hmesha bus or kuch ni chiye 😊🐤
+			    <b style="font-weight: 900;">I love youuu!!!</b></div>
+                    
+                </div>
+            </div>
+            <div class="item" style="background-image: url(IMG-20240211-WA0014.jpg);">
+                <div class="content">
+                    <div class="name">From Aryan</div>
+                    <div class="des" style="font-weight: 800;">Life ka har goal rahe aapka clear <br> Tum success pao without any fear <br> Har pal jio without any tear <br> Enjoy your day my dear <br>
+                    <b>Happy Birthday</b></div>
+                    
+                </div>
+            </div>
+            <div class="item" style="background-image: url(IMG-20240211-WA0015.jpg);">
+                <div class="content">
+                    <div class="name">From Aryan</div>
+                    <div class="des" style="background: -webkit-linear-gradient( #333,#eee); background-clip: text; -webkit-text-fill-color: transparent; font-weight: 900;">Roses are red,<br> violets are blue,<br> Sugar is sweet <br>and so are you. <br>But the Roses are wilting <br>the violets are dead <br> the sugar is empty <br>and so is your head<br>
+                    Happy Birthday to one of the BEST guy i know. Hope your birthday is as great as YOU are! </div>
+                    
+                </div>
+            </div>
+            <div class="item" style="background-image: url(IMG-20240211-WA0016.jpg);">
+                <div class="content">
+                    <div class="name">From Boys</div>
+                    <div class="des" style="color: #000; font-weight: 900;">On your special day,<br> I send a cheer,<br>
+                        A Friend like You Who is like no other will always be much more like a brother!
+                    </div>
+                    
+                </div>
+            </div>
+            
+
+        </div>
+
+        <div class="button">
+            <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
+            <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+
+    </div>
+    <script>
+        let next = document.querySelector('.next')
+        let prev = document.querySelector('.prev')
+
+        next.addEventListener('click', function(){
+            let items = document.querySelectorAll('.item')
+            document.querySelector('.slide').appendChild(items[0])
+        })
+
+        prev.addEventListener('click', function(){
+            let items = document.querySelectorAll('.item')
+            document.querySelector('.slide').prepend(items[items.length - 1]) // here the length of items = 6
+        })
+    </script>
+</body>
+</html>
