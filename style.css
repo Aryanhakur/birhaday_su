@@ -20,7 +20,7 @@ body{
     box-shadow: 0 30px 50px #dbdbdb;
     background-position: center bottom;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 1024px 1280px;
 }
 
 .container .slide .item{
